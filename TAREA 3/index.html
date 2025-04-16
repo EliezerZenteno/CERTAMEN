@@ -3,84 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
-    <script src="https://kit.fontawesome.com/4fcbcfe3d2.js" crossorigin="anonymous"></script>
+    <title>TECNO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo img {
+            max-width: 120px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6f61;
+        }
+
+        .banner {
+            background-color: #ff6f61;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .banner p {
+            font-size: 24px;
+        }
+
+        .contenido {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contenido article {
+            margin-bottom: 40px;
+        }
+
+        .contenido article h2 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .contenido article p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .contenido article img {
+            max-width: 90%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contenido article img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        .redes-sociales a {
+            margin: 0 15px;
+            transition: transform 0.3s;
+        }
+
+        .redes-sociales a:hover {
+            transform: scale(1.1);
+        }
+
+        .redes-sociales img {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .redes-sociales img:hover {
+            opacity: 0.7;
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 <body>
-    <main class="container">
-        <header class="cabecera">
-            <figure class="contenedor_foto_perfil">
-                <img src="./img/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg" alt="imagen de perfil">
-            </figure>
-            <section class="nombre_puesto">
-                <h1>Eliezer Zenteno</h1>
-                <h2>Ingeniero en Cyberseguridad</h2>
-            </section>
-        </header>
-        <section>
-            <h3>Perfil Profesional</h3>
-            <hr>
-            <p>Hola soy eliezer zenteno, estoy en busca de trabajo, me e relacionado en diferentes areas de informatica y tambien diferentes experiencias en otros trabajos, como guardia de rally, practica en santiago de ciberseguridad, etc</p>
-        </section>
-        <section>
-            <h3><i class="fas fa-cogs" ></i>Habilidades</h3>
-            <hr>
+    <header>
+        <div class="logo">
+            <img src="logo tecno.png" alt="Logo de la Empresa">
+        </div>
+        <nav>
             <ul>
-                <li>- Trabajo en Equipo, siempre apoyando el ambito laboral y el sano de este mismo, tambien con mis colegas y todo lo que tenga que ver en la empresa</li>
-                <li>- Gestión de Proyectos, me gusta ser el gestionador de los diferentes proyectos del area, asi como los nuevos o los que dejaron algunos colegas a la mitad</li>
-                <li>- Liderazgo, me considero buen lider, tanto como para trabajos como grupalmente, no soy egoista y solo pienso en los demas, yo soy ultimo en esto</li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h1>Bienvenidos a TECNO</h1>
+            <p>Ofrecemos los mejores servicios para ti.</p>
         </section>
-        <section>
-            <h3><i class="fas fa-language"></i>Idiomas</h3>
-            <hr>
-            <ul>
-                <li>Español</li>
-                <li>Inglés</li>
-            </ul>
-        </section>
-        <section>
-            <h3><i class="fa-solid fa-face-smile"></i>Información de Contacto</h3>
-            <hr>
-            <address>
-                <p>Email:elizenteno87@gmail.com</p>
-                <p>Teléfono:+569 984485580</p>
-                <p>LinkedIn: <a href="#">Perfil de LinkedIn </a></p>
-            </address>
-        </section>
-        <section>
-            <h3><i class="fas fa-briefcase"></i> Experiencia Laboral</h3>
-            <hr>
+        <section class="contenido">
             <article>
-                <h4>Puesto</h4>
-                <p><strong>TECNO</strong> (2024-2025)</p>
-                <p>Jefe de redes sociales en temas de seguridad y publicidad</p>
+                <h2>Nuestros Servicios</h2>
+                <p>1. Soporte Técnico Remoto 24/7
+                    Asistencia técnica inmediata, sin importar la hora, para solucionar problemas de hardware y software desde cualquier lugar..</p>
+                    <p>2. Mantenimiento Preventivo y Optimización
+                        Mantenimiento regular para asegurar el máximo rendimiento de tus equipos, limpieza interna, actualizaciones y optimización de sistemas.</p>
+                        <p>3. Personalización de PC
+                            Construcción y personalización de computadoras a medida, adaptadas a tus necesidades específicas de gaming, diseño, o trabajo profesional.</p>
+                            <p>4. Alquiler de Equipos
+                                Alquiler de computadoras para eventos, proyectos temporales o capacitaciones, con opciones flexibles y sin compromiso de compra.</p>
+                                <p>5. Capacitación y Asesoría Tecnológica
+                                    Cursos y asesorías sobre el uso eficiente de tu equipo, desde lo básico hasta herramientas especializadas para empresas.</p>
+                                    <p>6. Actualización y Reparación de Componentes
+                                        Servicio de actualización o reparación de hardware, mejorando el rendimiento y extendiendo la vida útil de tu equipo.</p>
+                                        <p>7. Backup y Recuperación de Datos
+                                            Protección y recuperación de datos importantes ante pérdida o daños, asegurando tu información vital.</p>
+                <img src="home_1_slider_4.jpg" alt="Servicio 1">
             </article>
             <article>
-                <h4>Puesto</h4>
-                <p><strong>WC Rally</strong> (2024-2024)</p>
-                <p>Guardia de rally, para cuidar y proteger la gente que no ingrese a la pista</p>
+                <h2>Sobre Nosotros</h2>
+                <p>Es una empresa líder en asistencia tecnológica fundada en 2015, especializada en ofrecer soluciones de soporte y asesoramiento en tecnología para empresas y particulares. Con sede en Ciudad de Chile, Concepcion,  TecnoAssist ha crecido rápidamente hasta convertirse en un referente en la industria, brindando soporte integral en áreas como ciberseguridad, mantenimiento de equipos electrónicos y consultoría en inteligencia artificial.</p>
+                <img src="Tecno-Logo-Vector-scaled.jpg" alt="Nosotros">
             </article>
         </section>
-        
-        <section>
-            <h3><i class="fas fa-graduation-cap"></i> Formación</h3>
-            <hr>
-            <article>
-                <h4>Carrera o Diplomado</h4>
-                <p><strong>Madre Paulina</strong> (2010-2023)</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </article>
-            <article>
-                <h4>Carrera o Diplomado</h4>
-                <p><strong>Inacap</strong> (2024....)</p>
-                <p>Ingeniero en ciberseguridad en CURSO</p>
-            </article>
-        </section>
-       
-
-
     </main>
+    <footer>
+        <p>Rio llico 67, Concepcion, Chile</p>
+        <p>Email: TECNO@contactoempresa.cl</p>
+        <div class="redes-sociales">
+            <a href="#" title="Facebook"><img src="facebook.svg" alt="Facebook"></a>
+            <a href="#" title="Twitter"><img src="twitter.svg" alt="Twitter"></a>
+            <a href="#" title="Instagram"><img src="instagram.svg"Instagram"></a>            
+        </div>
+    </footer>
 </body>
 </html>
